@@ -31,7 +31,7 @@ COPY --from=builder /pages/.next/standalone ./
 COPY --from=builder /pages/.next/static ./.next/static
 COPY --from=builder /pages/.next/server ./.next/server
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD export HOSTNAME="127.0.0.1"; \
     node server.js;
